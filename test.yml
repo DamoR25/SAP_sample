@@ -1,0 +1,12 @@
+---
+
+- name: running tcode from windows
+  hosts: all
+  tasks:
+    - name: running tocode
+      win_command: python C:\Users\ansible\Downloads\dr\drcode3.py
+      register: result
+
+    - name: debug output
+      debug:
+        var: result  
