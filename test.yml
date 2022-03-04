@@ -2,7 +2,7 @@
 
 - name: running tcode from windows
   hosts: inmbz2081.in.dst.ibm.com
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - name: running tocode
       script: C:\Users\ansible\Downloads\dr\download\test.bat
