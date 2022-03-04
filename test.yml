@@ -4,7 +4,8 @@
   hosts: inmbz2081.in.dst.ibm.com
   tasks:
     - name: running tocode
-      win_command: python C:\Users\ansible\Downloads\dr\drcode3.py
+      win_command: C:\Users\ansible\Downloads\dr\demo.bat
+      #win_command: python C:\Users\ansible\Downloads\dr\drcode3.py
       register: result
 
     - name: debug output
