@@ -8,6 +8,6 @@
       #win_command: python C:\Users\ansible\Downloads\dr\drcode3.py
       register: result
 
-    - name: debug output
-      debug:
-        var: result  
+   # - name: debug output
+   #   debug:
+   #     var: result  
