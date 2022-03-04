@@ -5,7 +5,7 @@
   gather_facts: no
   tasks:
     - name: builtin
-      ansible.builtin.script:
+      ansible.windows.win_shell:
         cmd: C:\Users\ansible\Downloads\dr\download\test.bat
    # - name: Copy File
    #  win_copy:
