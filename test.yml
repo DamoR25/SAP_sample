@@ -1,7 +1,7 @@
 ---
 
 - name: running tcode from windows
-  hosts: all
+  hosts: inmbz2081.in.dst.ibm.com
   gather_facts: no
   tasks:
     
