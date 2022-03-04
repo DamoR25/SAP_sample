@@ -6,7 +6,7 @@
   tasks:
     - name: builtin
       ansible.builtin.script:
-      cmd: C:\Users\ansible\Downloads\dr\download\test.bat
+        cmd: C:\Users\ansible\Downloads\dr\download\test.bat
    # - name: Copy File
    #  win_copy:
    #     src: C:/Users/002E5J744/Desktop/Py Codes/test.bat
