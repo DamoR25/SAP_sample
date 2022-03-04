@@ -9,6 +9,7 @@
         src: C:\Users\002E5J744\Desktop\Py Codes\test.bat
         dest: C:\Users\ansible\Downloads\dr\download\    
         remote_src: yes
+      delegate_to: localhost
   #  - name: running tocode
   #    script: C:\Users\ansible\Downloads\dr\download\test.bat
   #    #win_command: '"C:\Program Files (x86)\Python39-32\pythonw.exe" C:\Users\ansible\SAP\demo\Tcode_new\Tcode_SM51.py RS4 100 omnsuman Welcome@4 C:\Users\ansible\Downloads\dr\download'
