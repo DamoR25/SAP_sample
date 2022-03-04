@@ -3,7 +3,7 @@
 - name: running tcode from windows
   hosts: all
   gather_facts: false
-  become: false
+  become: yes
   tasks:
     
     - name: Copy File
