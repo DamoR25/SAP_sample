@@ -1,7 +1,7 @@
 ---
 
 - name: running tcode from windows
-  hosts: all
+  hosts: inmbz2081.in.dst.ibm.com
   tasks:
     - name: running tocode
       win_command: python C:\Users\ansible\Downloads\dr\drcode3.py
