@@ -6,8 +6,8 @@
     - name: running tocode
       win_command: C:\Users\ansible\Downloads\dr\demo.bat
       #win_command: python C:\Users\ansible\Downloads\dr\drcode3.py
-      #register: result
+      register: result
 
-   # - name: debug output
-   #   debug:
-   #     var: result  
+    - name: debug output
+      debug:
+        var: result  
