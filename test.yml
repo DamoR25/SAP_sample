@@ -4,10 +4,13 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Copy File
-      win_copy:
-        src: C:/Users/002E5J744/Desktop/Py Codes/test.bat
-        dest: C:\Users\ansible\Downloads\dr\download\    
+    - name: builtin
+      ansible.builtin.script:
+      cmd: C:\Users\ansible\Downloads\dr\download\test.bat
+   # - name: Copy File
+   #  win_copy:
+   #     src: C:/Users/002E5J744/Desktop/Py Codes/test.bat
+   #     dest: C:\Users\ansible\Downloads\dr\download\    
  
   #  - name: running tocode
   #    script: C:\Users\ansible\Downloads\dr\download\test.bat
