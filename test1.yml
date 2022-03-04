@@ -1,0 +1,16 @@
+---
+
+- name: running tcode from windows
+  hosts: all
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: running tocode
+      win_command: C:\Users\ansible\Downloads\dr\download\test.bat
+      #win_command: python C:\Users\ansible\Downloads\dr\download\drcode3.py
+      register: result
+      #process_min_count: 2
+
+    - name: debug output
+      debug:
+        var: result  
