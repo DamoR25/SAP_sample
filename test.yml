@@ -11,6 +11,6 @@
       #register: result
       #process_min_count: 2
 
-    - name: debug output
-      debug:
-        var: result  
+    #- name: debug output
+    #  debug:
+    #    var: result  
