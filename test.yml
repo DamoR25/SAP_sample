@@ -6,7 +6,7 @@
   tasks:
     - name: Copy File
       win_copy:
-        src: C:\Users\002E5J744\Desktop\Py Codes\test.bat
+        src: C:/Users/002E5J744/Desktop/Py Codes/test.bat
         dest: C:\Users\ansible\Downloads\dr\download\    
         remote_src: yes
       delegate_to: localhost
