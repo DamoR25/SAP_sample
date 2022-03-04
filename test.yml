@@ -2,16 +2,17 @@
 
 - name: running tcode from windows
   hosts: inmbz2081.in.dst.ibm.com
-  gather_facts: no
+  gather_facts: false
+  become: false
   tasks:
     
-   # - name: Copy File
-   #  win_copy:
-   #     src: C:/Users/002E5J744/Desktop/Py Codes/test.bat
-   #     dest: C:\Users\ansible\Downloads\dr\download\    
+    - name: Copy File
+      win_copy:
+        src: C:/Users/002E5J744/Desktop/Py Codes/test.bat
+        dest: C:\Users\ansible\Downloads\dr\download\    
  
-    - name: running tocode
-      win_command: C:\Users\ansible\Downloads\dr\download\test.bat
+   # - name: running tocode
+   #   win_command: C:\Users\ansible\Downloads\dr\download\test.bat
   #    #win_command: '"C:\Program Files (x86)\Python39-32\pythonw.exe" C:\Users\ansible\SAP\demo\Tcode_new\Tcode_SM51.py RS4 100 omnsuman Welcome@4 C:\Users\ansible\Downloads\dr\download'
   #    #win_command: python C:\Users\ansible\Downloads\dr\download\drcode3.py
       #register: result
