@@ -3,7 +3,7 @@
 - name: running tcode from windows
   hosts: inmbz2081.in.dst.ibm.com
   gather_facts: false
-  become: yes
+  #become: yes
   tasks: 
     - name: running tocode
       win_command: C:\Users\ansible\SAP\demo\demo.bat
