@@ -12,7 +12,7 @@
       register: result
     - name: Wait until the string "completed" is in the file /tmp/foo before continuing
       wait_for:
-        path: C:\Users\ansible\SAP\demo\demo.bat
+        path: /tmp/foo
         search_regex: completed
       #process_min_count: 2
       
