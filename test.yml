@@ -6,9 +6,8 @@
   #become: yes
   tasks: 
     - name: running tocode
-      win_command: C:\Users\ansible\SAP\demo\demo.bat
-  #    #win_command: '"C:\Program Files (x86)\Python39-32\pythonw.exe" C:\Users\ansible\SAP\demo\Tcode_new\Tcode_SM51.py RS4 100 omnsuman Welcome@4 C:\Users\ansible\Downloads\dr\download'
-  #    #win_command: python C:\Users\ansible\Downloads\dr\download\drcode3.py
+      ansible.windows.win_shell: C:\Users\ansible\Downloads\dr\Python39.ps1
+      #win_shell: C:\Users\ansible\SAP\demo\demo.bat
       register: result
       #process_min_count: 2
       
