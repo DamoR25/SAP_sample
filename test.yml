@@ -2,7 +2,7 @@
 
 - name: running tcode from windows
   hosts: inmbz2081.in.dst.ibm.com
-  gather_facts: false
+  #gather_facts: false
   #become: yes
   tasks: 
     - name: running tocode
