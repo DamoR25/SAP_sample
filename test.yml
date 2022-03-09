@@ -6,8 +6,8 @@
   #become: yes
   tasks: 
     - name: running tocode
-      ansible.windows.win_shell: C:\Users\ansible\Downloads\dr\Python39.ps1
-      #win_shell: C:\Users\ansible\SAP\demo\demo.bat
+      #ansible.windows.win_shell: C:\Users\ansible\Downloads\dr\Python39.ps1
+      win_shell: C:\Users\ansible\SAP\demo\demo.bat
       register: result
       #process_min_count: 2
       
